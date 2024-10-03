@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 const Edit = ({ id }) => {
   const navigate = useNavigate();
   const [editformData, seteditFormData] = useState({
-    productId: "",
     productName: "",
     productImage: "",
     productPrice: "",
@@ -44,7 +43,7 @@ const Edit = ({ id }) => {
   return (
     <div>
       <form className="max-w-sm mx-auto" onSubmit={handleSubmit}>
-        <div className="mb-5">
+        {/* <div className="mb-5">
           <label
             htmlFor="productId"
             className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -61,7 +60,7 @@ const Edit = ({ id }) => {
             placeholder="Enter Your Product Id"
             required
           />
-        </div>
+        </div> */}
         <div className="mb-5">
           <label
             htmlFor="productName"

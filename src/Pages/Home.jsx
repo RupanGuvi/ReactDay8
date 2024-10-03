@@ -38,9 +38,9 @@ const Home = ({ setId }) => {
         return (
           <div key={ele.productId}>
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              {/* <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {ele.productId}
-              </h2>
+              </h2> */}
               <img
                 className="rounded-t-lg"
                 src={ele.productImage}

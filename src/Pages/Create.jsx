@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 
 const Create = () => {
   const [formData, setFormData] = useState({
-    productId: "",
     productName: "",
     productImage: "",
     productPrice: "",
@@ -30,7 +29,7 @@ const navigate = useNavigate();
   return (
     <div>
       <form className="max-w-sm mx-auto" onSubmit={handleSubmit}>
-        <div className="mb-5">
+        {/* <div className="mb-5">
           <label
             htmlFor="productId"
             className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -47,7 +46,7 @@ const navigate = useNavigate();
             placeholder="Enter Your Product Id"
             required
           />
-        </div>
+        </div> */}
         <div className="mb-5">
           <label
             htmlFor="productName"
